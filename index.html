@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstAngularApp",lang>
     <head>
         <meta charset="utf-8">
+        <script src="angular.min.js"></script>
         <script src="app.js"></script>
         <style> body{font-size: 1.5em;}</style>
         <title>why code gets complex</title>
     </head>
     <body>
-        <h1>low cohesion and tight coupling example</h1>
-        <div id="name calculator">
-            <div>
-                your name: <input type="text" id="name">
-            </div>
-            <div id="output"></div>
+        <h1>ang app</h1>
+        <div ng-controller="MyFirstController">
+            {{name}}
         </div>
     </body>
 </html>
